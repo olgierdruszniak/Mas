@@ -1,0 +1,27 @@
+import java.io.FileNotFoundException;
+import java.sql.Date;
+
+public class Main{
+    public static void main(String[] args) throws FileNotFoundException {
+        /*
+        1. class extent -> in classes: Person, Customer, Driver
+        2. class extent persistence -> working for Driver class
+        3. Complex attribute -> Vehicle in Driver class
+        4. Optional attribute -> rating in class Driver
+        5. Multi-value attribute -> favourite cuisines in class Customer
+        6. Class attribute -> base salary in driver class
+        7. Derived attribute -> getDiscount in Customer class
+        8. Class method -> showAvailableDrivers
+        9. Method overriding and overloading -> overriding in Driver toString() and overloading in Driver constructor for example?
+        */
+
+//        Driver driver1 = new Driver("James", "Smith", "james@smith.com", "799526881", Date.valueOf("1992-10-05"), "Cupra Formentor", "WPI1435L");
+//        System.out.println(Driver.getExtent());
+//        Driver driver2 = new Driver("Mark", "Smith", "mark@smith.com", "799552881", Date.valueOf("1990-11-13"), "Cupra Formentor", "WP25531");
+//        System.out.println(Driver.getExtent());
+//        Extent.saveExtents();
+        System.out.println(Driver.getExtent());
+        Extent.loadExtents();
+        System.out.println(Driver.getExtent());
+    }
+}
